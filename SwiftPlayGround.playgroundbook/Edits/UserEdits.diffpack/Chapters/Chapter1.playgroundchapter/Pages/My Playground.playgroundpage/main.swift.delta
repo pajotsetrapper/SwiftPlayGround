@@ -19,9 +19,50 @@
 		</dict>
 		<dict>
 			<key>ModifiedContent</key>
+			<string> - - - - - -
+ 
+ Swift provides three primary collection types, known as arrays, sets, and dictionaries, for storing collections of values. Arrays are ordered collections of values. Sets are unordered collections of unique values. Dictionaries are unordered collections of key-value associations.
+</string>
+			<key>ModifiedRange</key>
+			<string>{786, 296}</string>
+			<key>OriginalContent</key>
+			<string> - - - - - - -
+</string>
+			<key>OriginalRange</key>
+			<string>{680, 15}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string> 
+ 
+</string>
+			<key>ModifiedRange</key>
+			<string>{1268, 4}</string>
+			<key>OriginalContent</key>
+			<string> - Ranges
+ 
+ ?
+ - 
+</string>
+			<key>OriginalRange</key>
+			<string>{881, 19}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string> - - - - -
+</string>
+			<key>ModifiedRange</key>
+			<string>{1283, 11}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{911, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
 			<string> (this is mutable)</string>
 			<key>ModifiedRange</key>
-			<string>{1159, 18}</string>
+			<string>{1436, 18}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>
@@ -31,7 +72,7 @@
 			<key>ModifiedContent</key>
 			<string> //(in xCode, press Option+click the variable name to see its type)</string>
 			<key>ModifiedRange</key>
-			<string>{1276, 67}</string>
+			<string>{1553, 67}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>
@@ -43,7 +84,7 @@
 // Therefore, need to cast them manually:
 </string>
 			<key>ModifiedRange</key>
-			<string>{1418, 207}</string>
+			<string>{1695, 207}</string>
 			<key>OriginalContent</key>
 			<string>//sum = myDouble + myInt =&gt; This will to compile, since trying to add 2 variables of different type! (there is no implicit casting)
 // Therefore, need to cast them:
@@ -66,7 +107,7 @@ if myArray.isEmpty {
 myArray = ["Pieter", "Coppens", "was", "here"]
 </string>
 			<key>ModifiedRange</key>
-			<string>{2136, 275}</string>
+			<string>{2413, 275}</string>
 			<key>OriginalContent</key>
 			<string>//Playing with Arrays
 var myArray = ["Pieter", "Coppens", "was", "here"]
@@ -78,7 +119,7 @@ var myArray = ["Pieter", "Coppens", "was", "here"]
 			<key>ModifiedContent</key>
 			<string></string>
 			<key>ModifiedRange</key>
-			<string>{2427, 0}</string>
+			<string>{2704, 0}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
@@ -92,7 +133,7 @@ myArray.append("!"); print (myArray)
 print ("Checking if there is an element 'was': \(myArray.contains("was"))")
 </string>
 			<key>ModifiedRange</key>
-			<string>{2467, 209}</string>
+			<string>{2744, 209}</string>
 			<key>OriginalContent</key>
 			<string>print (myArray.count) // Number of elements in the Array
 myArray.append("!")
@@ -132,14 +173,46 @@ else {
     print ("There is no such key in the dict")
 }
 
-let doesNotExist = myDaysDict["doesnotexist"]! // mind the exclamation mark, it will result in throwing an exception rather than returning nil in case the key does not exist.
+// let doesNotExist = myDaysDict["doesnotexist"]! // mind the exclamation mark, it will result in throwing an exception rather than returning nil in case the key does not exist.
 
-/*Flow control: if/then/else ; switch-case; iterating */
+/***********************************************
+ Flow control: if/then/else ; switch-case; loops
+ ***********************************************/
 
+//Switch statement
+let n = 2
+switch n {
+case 1:
+    print("It's 1!")
+case 2...4:
+    print("It's between 2 and 4!")
+case 5, 6:
+    print("It's 5 or 6")
+default:
+    print("Its another number!")
+}
+
+//If ... else if ... else
+let speed = 28
+if speed &lt;= 0 {
+    print("Stationary")
+} else if speed &lt;= 30 {
+    print("Safe speed")
+} else {
+    print("Too fast!")
+}
+
+//For loop
 for i in 1...5{
-    print (i)
-}//Output: 1 2 3 4 5
+    print ("For loop, loop number \(i)")
+}
 
+//While loop
+var count = 1
+while count &lt; 3 {
+    print("While loop - count is \(count)")
+    count+=1
+}
     
 /* Classes / constructors, instance method &amp; class methods */
 /* Inheritance */
@@ -149,7 +222,7 @@ for i in 1...5{
  
 </string>
 			<key>ModifiedRange</key>
-			<string>{2793, 1479}</string>
+			<string>{3070, 2057}</string>
 			<key>OriginalContent</key>
 			<string>print (myArray)
 </string>
