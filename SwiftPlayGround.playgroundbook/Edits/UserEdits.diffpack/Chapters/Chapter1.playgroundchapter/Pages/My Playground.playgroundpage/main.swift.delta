@@ -53,11 +53,9 @@
 		</dict>
 		<dict>
 			<key>ModifiedContent</key>
-			<string>
-/*-----------------
+			<string>/*******************
  Playing with Arrays
- -----------------*/
-
+ ******************/
 
 var myArray:[String] = [] //Create an empty array of Strings
 if myArray.isEmpty {
@@ -68,7 +66,7 @@ if myArray.isEmpty {
 myArray = ["Pieter", "Coppens", "was", "here"]
 </string>
 			<key>ModifiedRange</key>
-			<string>{2136, 276}</string>
+			<string>{2136, 275}</string>
 			<key>OriginalContent</key>
 			<string>//Playing with Arrays
 var myArray = ["Pieter", "Coppens", "was", "here"]
@@ -80,7 +78,7 @@ var myArray = ["Pieter", "Coppens", "was", "here"]
 			<key>ModifiedContent</key>
 			<string></string>
 			<key>ModifiedRange</key>
-			<string>{2428, 0}</string>
+			<string>{2427, 0}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
@@ -94,7 +92,7 @@ myArray.append("!"); print (myArray)
 print ("Checking if there is an element 'was': \(myArray.contains("was"))")
 </string>
 			<key>ModifiedRange</key>
-			<string>{2468, 209}</string>
+			<string>{2467, 209}</string>
 			<key>OriginalContent</key>
 			<string>print (myArray.count) // Number of elements in the Array
 myArray.append("!")
@@ -107,11 +105,43 @@ print (myArray.contains("was")) //See if there is an element "was"
 			<key>ModifiedContent</key>
 			<string>print ("Substituted the first 2 elements of the array: \(myArray)")
     
-/* Playing with dictionaries */
-/*Flow control: if/then/else ; switch-case; loops */
+/*************************
+ Playing with dictionaries 
+ ************************/
+
+var myDaysDict = ["mon": 1,
+                  "tue": 2,
+                  "wed": 3,
+                  "thu": 4,
+                  "fri": 5
+]
+print ("This is the dict: \(myDaysDict)")
+print ("Get an existing key (mon) from a dict: \(myDaysDict["mon"])")
+print ("Get an non-existing key from a dict: \(myDaysDict["keydoesnotexist"])") // Unlike Python, this will not raise an exception. It will return nil, as the key does not exist (optionals)
+print ("Number of items in the dict \(myDaysDict.count)")
+for (k,v) in myDaysDict{
+    print ("\(k) - number: \(v)")
+}
+
+// Getting key/values from a dict - without being certain it exists
+
+if (myDaysDict["mon"] != nil) { //By default, getting a non-existing key will return nil as value.
+    print ("The key 'mon' exists, its value is \(myDaysDict["mon"])")
+}
+else {
+    print ("There is no such key in the dict")
+}
+
+let doesNotExist = myDaysDict["doesnotexist"]! // mind the exclamation mark, it will result in throwing an exception rather than returning nil in case the key does not exist.
+
+/*Flow control: if/then/else ; switch-case; iterating */
+
+for i in 1...5{
+    print (i)
+}//Output: 1 2 3 4 5
 
     
-/* Classes / constructors, instance methodf &amp; class methods */
+/* Classes / constructors, instance method &amp; class methods */
 /* Inheritance */
 /* Exceptions / exception handling (try, except ExcX, ExcY , ) Custom Exceptions ... */
 
@@ -119,7 +149,7 @@ print (myArray.contains("was")) //See if there is an element "was"
  
 </string>
 			<key>ModifiedRange</key>
-			<string>{2794, 337}</string>
+			<string>{2793, 1479}</string>
 			<key>OriginalContent</key>
 			<string>print (myArray)
 </string>
