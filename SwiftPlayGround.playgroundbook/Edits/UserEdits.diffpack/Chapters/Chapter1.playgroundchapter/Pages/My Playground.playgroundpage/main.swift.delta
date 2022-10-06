@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string> - See https://www.swift.org/documentation/ for a full guide
+ - https://kpbp.github.io/swiftcheatsheet/
+ 
+</string>
+			<key>ModifiedRange</key>
+			<string>{57, 106}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{57, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string> (this is mutable)</string>
+			<key>ModifiedRange</key>
+			<string>{1159, 18}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1053, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string> //(in xCode, press Option+click the variable name to see its type)</string>
+			<key>ModifiedRange</key>
+			<string>{1276, 67}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1152, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//sum = myDouble + myInt =&gt; This will NOT compile, since trying to add 2 variables of different type! (there is no implicit casting in Swift like we have in Python)
+// Therefore, need to cast them manually:
+</string>
+			<key>ModifiedRange</key>
+			<string>{1418, 207}</string>
+			<key>OriginalContent</key>
+			<string>//sum = myDouble + myInt =&gt; This will to compile, since trying to add 2 variables of different type! (there is no implicit casting)
+// Therefore, need to cast them:
+</string>
+			<key>OriginalRange</key>
+			<string>{1227, 165}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>
+/*-----------------
+ Playing with Arrays
+ -----------------*/
+
+
+var myArray:[String] = [] //Create an empty array of Strings
+if myArray.isEmpty {
+    print("Your array is empty")
+} else {
+    print ("Your array is not empty")
+}
+myArray = ["Pieter", "Coppens", "was", "here"]
+</string>
+			<key>ModifiedRange</key>
+			<string>{2136, 276}</string>
+			<key>OriginalContent</key>
+			<string>//Playing with Arrays
+var myArray = ["Pieter", "Coppens", "was", "here"]
+</string>
+			<key>OriginalRange</key>
+			<string>{1903, 73}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string></string>
+			<key>ModifiedRange</key>
+			<string>{2428, 0}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{1992, 1}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>print ("Number of elements in the Array:  \(myArray.count)") // Number of elements in the Array
+myArray.append("!"); print (myArray)
+print ("Checking if there is an element 'was': \(myArray.contains("was"))")
+</string>
+			<key>ModifiedRange</key>
+			<string>{2468, 209}</string>
+			<key>OriginalContent</key>
+			<string>print (myArray.count) // Number of elements in the Array
+myArray.append("!")
+print (myArray.contains("was")) //See if there is an element "was"
+</string>
+			<key>OriginalRange</key>
+			<string>{2033, 144}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>print ("Substituted the first 2 elements of the array: \(myArray)")
+    
+/* Playing with dictionaries */
+/*Flow control: if/then/else ; switch-case; loops */
+
+    
+/* Classes / constructors, instance methodf &amp; class methods */
+/* Inheritance */
+/* Exceptions / exception handling (try, except ExcX, ExcY , ) Custom Exceptions ... */
+
+
+ 
+</string>
+			<key>ModifiedRange</key>
+			<string>{2794, 337}</string>
+			<key>OriginalContent</key>
+			<string>print (myArray)
+</string>
+			<key>OriginalRange</key>
+			<string>{2294, 16}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
