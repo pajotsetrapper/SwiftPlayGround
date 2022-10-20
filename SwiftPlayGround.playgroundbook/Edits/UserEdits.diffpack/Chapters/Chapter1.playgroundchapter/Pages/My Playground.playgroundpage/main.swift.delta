@@ -282,13 +282,67 @@ print ("Passing an value by referece (pointer): Before swapInts: a=\(a), b=\(b)"
 swapTwoInts(&amp;a,&amp;b)
 print ("Passing an value by referece (pointer): After swapInts : a=\(a), b=\(b)")
 
+/************************** Classes &amp; Structures ***********************
+ https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html
+ - structures are value types
+ - classes are reference types
+ */
 
-/* Classes / constructors, instance method &amp; class methods */
+
+struct Resolution {
+    var width = 1920
+    var height = 1080
+}
+var myRes = Resolution()
+print ("Structs: Resolution.width \(myRes.width), Resolution.height \(myRes.height)")
+myRes.width=2048
+print ("Structs: Resolution.width (updated) \(myRes.width), Resolution.height \(myRes.height)")
+
+//Classes
+    //https://www.programiz.com/swift-programming/classes-objects
+class Mens{
+    var species = "Tweepotigen" // Unlike Python, this will be an instance variable
+}
+
+class Person{
+    var firstName: String
+    var lastName: String
+    var birthYear: Int
+    init(firstName: String, lastName: String, birthYear: Int){ //Constructor
+        self.firstName = firstName
+        self.lastName = lastName
+        self.birthYear = birthYear
+    }
+    
+    func introduce(){ //Method
+        print ("Hello, I am \(self.firstName) \(self.lastName), an instance of a Person - born in \(self.birthYear)")
+    }
+}
+var me = Person(firstName: "Polle", lastName: "Pap", birthYear: 1969)
+me.introduce()
+var you = Person(firstName: "Piet", lastName: "Konijn", birthYear: 2016)
+you.introduce()
+you.firstName = "Jan"
+you.introduce()
+me.introduce()
+
+var youToo = you
+youToo.introduce()
+youToo.firstName = "Classes are reference types you see?"
+youToo.lastName = "YouToo = you =&gt; changing a property onb you will change youToo as well, since pointing so same memory"
+youToo.introduce()
+you.introduce()
+
 /* Inheritance */
+
+
 /* Exceptions / exception handling (try, except ExcX, ExcY , ) Custom Exceptions ... */
+// https://www.programiz.com/swift-programming/error-handling
+
+/*Introspection*/
 </string>
 			<key>ModifiedRange</key>
-			<string>{3070, 5064}</string>
+			<string>{3070, 6680}</string>
 			<key>OriginalContent</key>
 			<string>print (myArray)
 
